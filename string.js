@@ -14,7 +14,7 @@ class Texto {
     }
 
     includes(texto) {
-        for(let i = 0; i < this.tamanho(); i += texto.tamanho()) {
+        for(let i = 0; i < this.tamanho(); i++) {
             const pedaco = this.dado.slice(i, texto.tamanho() + i)
             if(this._ehIgual(pedaco, texto)) {
                 return true
